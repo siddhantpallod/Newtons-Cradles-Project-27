@@ -4,14 +4,13 @@ class Bob{
         
         var options = {
             isStatic : false,
-            restitution : 1,
-            friction : 0.5,
+            restitution : 0.5,
             density : 1
         } 
         
         this.x = x;
         this.y = y;
-        this.body = Bodies.circle(this.x,this.y,35,options);
+        this.body = Bodies.circle(this.x,this.y,20,options);
         World.add(world,this.body);
     }
 
@@ -21,7 +20,7 @@ class Bob{
         translate(pos.x,pos.y);
         ellipseMode(RADIUS);
         fill("purple");
-        ellipse(0,0,70,70);
+        ellipse(0,0,20,20);
         pop();
     }
 }
